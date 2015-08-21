@@ -31,6 +31,16 @@
 <script src="../generators/python/colour.js"></script>
 <script src="../generators/python/variables.js"></script>
 <script src="../generators/python/procedures.js"></script>
+<script src="../generators/bitlash.js"></script>
+<script src="../generators/bitlash/logic.js"></script>
+<script src="../generators/bitlash/loops.js"></script>
+<script src="../generators/bitlash/math.js"></script>
+<script src="../generators/bitlash/text.js"></script>
+<script src="../generators/bitlash/lists.js"></script>
+<script src="../generators/bitlash/colour.js"></script>
+<script src="../generators/bitlash/robot.js"></script>
+<script src="../generators/bitlash/variables.js"></script>
+<script src="../generators/bitlash/procedures.js"></script>
 <script src="../generators/dart.js"></script>
 <script src="../generators/dart/logic.js"></script>
 <script src="../generators/dart/loops.js"></script>
@@ -47,6 +57,7 @@
 <script src="../blocks/text.js"></script>
 <script src="../blocks/lists.js"></script>
 <script src="../blocks/colour.js"></script>
+<script src="../blocks/robot.js"></script>
 <script src="../blocks/variables.js"></script>
 <script src="../blocks/procedures.js"></script>
 <!-- Load the Google Drive SDK Realtime libraries. -->
@@ -419,6 +430,10 @@ h1 {
           </block>
         </value>
       </block>
+    </category>
+    <category name="Robot" custom="ROBOT">
+      <block type="move_forward"></block>
+      <block type="move_backward"></block>
     </category>
     <sep></sep>
     <category name="Variables" custom="VARIABLE"></category>

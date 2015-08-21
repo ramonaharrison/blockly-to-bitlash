@@ -2,9 +2,10 @@
 <head>
   <meta charset="utf-8">
   <title>BlocklyDuino</title>
+  <script type="text/javascript" src="../../blocks/robot.js"></script>
+    <script type="text/javascript" src="../../generators/bitlash/robot.js"></script>
   <script type="text/javascript" src="../../blockly_compressed.js"></script>
   <script type="text/javascript" src="../../blocks_compressed.js"></script>
-  <script type="text/javascript" src="../../arduino_compressed.js"></script>
   <script type="text/javascript" src="../../bitlash_compressed.js"></script>
   <script type="text/javascript" src="../../msg/js/en.js"></script>
   <script type="text/javascript" src="Blob.js"></script>
@@ -362,6 +363,14 @@ function init() {
     </category>
     <category name="Text">
       <block type="text"></block>
+    </category>
+    <category name="Robot">
+      <block type="move_forward"></block>
+      <block type="move_backward"></block>
+      <block type="turn_left"></block>
+      <block type="turn_right"></block>
+      <block type="blink_left_light"></block>
+      <block type="blink_right_light"></block>
     </category>
     <category name="Variables" custom="VARIABLE"></category>
     <category name="Functions" custom="PROCEDURE"></category>
