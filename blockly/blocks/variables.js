@@ -43,8 +43,7 @@ Blockly.Blocks['variables_get'] = {
     this.setHelpUrl(Blockly.Msg.VARIABLES_GET_HELPURL);
     this.setColour(Blockly.Blocks.variables.HUE);
     this.appendDummyInput()
-        .appendField(new Blockly.FieldVariable(
-        Blockly.Msg.VARIABLES_DEFAULT_NAME), 'VAR');
+        .appendField(new Blockly.FieldDropdown([["a", "a"], ["b", "b"], ["c", "c"], ["d", "d"], ["e", "e"], ["f", "f"], ["g", "g"], ["h", "h"], ["i", "i"], ["j", "j"], ["k", "k"], ["l", "l"], ["m", "m"], ["n", "n"], ["o", "o"], ["p", "p"], ["q", "q"], ["r", "r"], ["s", "s"], ["t", "t"], ["u", "u"], ["v", "v"], ["w", "w"], ["x", "x"], ["y", "y"], ["z", "z"]]), "VAR");
     this.setOutput(true);
     this.setTooltip(Blockly.Msg.VARIABLES_GET_TOOLTIP);
     this.contextMenuMsg_ = Blockly.Msg.VARIABLES_GET_CREATE_SET;
@@ -98,10 +97,115 @@ Blockly.Blocks['variables_set'] = {
       "message0": Blockly.Msg.VARIABLES_SET,
       "args0": [
         {
-          "type": "field_variable",
-          "name": "VAR",
-          "variable": Blockly.Msg.VARIABLES_DEFAULT_NAME
-        },
+          "type": "field_dropdown",
+      "name": "VAR",
+      "options": [
+        [
+          "a",
+          "a"
+        ],
+        [
+          "b",
+          "b"
+        ],
+        [
+          "c",
+          "c"
+        ],
+        [
+          "d",
+          "d"
+        ],
+        [
+          "e",
+          "e"
+        ],
+        [
+          "f",
+          "f"
+        ],
+        [
+          "g",
+          "g"
+        ],
+        [
+          "h",
+          "h"
+        ],
+        [
+          "i",
+          "i"
+        ],
+        [
+          "j",
+          "j"
+        ],
+        [
+          "k",
+          "k"
+        ],
+        [
+          "l",
+          "l"
+        ],
+        [
+          "m",
+          "m"
+        ],
+        [
+          "n",
+          "n"
+        ],
+        [
+          "o",
+          "o"
+        ],
+        [
+          "p",
+          "p"
+        ],
+        [
+          "q",
+          "q"
+        ],
+        [
+          "r",
+          "r"
+        ],
+        [
+          "s",
+          "s"
+        ],
+        [
+          "t",
+          "t"
+        ],
+        [
+          "u",
+          "u"
+        ],
+        [
+          "v",
+          "v"
+        ],
+        [
+          "w",
+          "w"
+        ],
+        [
+          "x",
+          "x"
+        ],
+        [
+          "y",
+          "y"
+        ],
+        [
+          "z",
+          "z"
+        ]
+      ]
+    },
         {
           "type": "input_value",
           "name": "VALUE"
