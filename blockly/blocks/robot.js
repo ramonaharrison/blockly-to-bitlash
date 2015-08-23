@@ -70,8 +70,7 @@ Blockly.Blocks['turn_left'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("turn left")
-        .appendField(new Blockly.FieldAngle("90"), "DEGREES")
-        .appendField("degrees");
+        .appendField(new Blockly.FieldAngle("90"), "DEGREES");
     this.setPreviousStatement(true);
     this.setNextStatement(true);
     this.setColour(Blockly.Blocks.robot.HUE);
@@ -84,8 +83,7 @@ Blockly.Blocks['turn_right'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("turn right")
-        .appendField(new Blockly.FieldAngle("90"), "DEGREES")
-        .appendField("degrees");
+        .appendField(new Blockly.FieldAngle("90"), "DEGREES");
     this.setPreviousStatement(true);
     this.setNextStatement(true);
     this.setColour(Blockly.Blocks.robot.HUE);

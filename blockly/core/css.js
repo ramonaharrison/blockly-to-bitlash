@@ -302,7 +302,7 @@ Blockly.Css.CONTENT = [
 
   '.blocklyMainBackground {',
   '  stroke-width: 1;',
-  '  stroke: #c6c6c6;',  /* Equates to #ddd due to border being off-pixel. */
+  '  stroke: #ffffff;',  /* Equates to #ddd due to border being off-pixel. */
   '}',
 
   '.blocklyMutatorBackground {',
@@ -383,7 +383,7 @@ Blockly.Css.CONTENT = [
 
   /* Category tree in Toolbox. */
   '.blocklyToolboxDiv {',
-  '  background-color: #ddd;',
+  '  background-color: #fff;',
   '  overflow-x: visible;',
   '  overflow-y: auto;',
   '  position: absolute;',
@@ -410,11 +410,11 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyTreeRow:hover {',
-  '  background-color: #e4e4e4;',
+  '  background-color: #fff;',
   '}',
 
   '.blocklyTreeSeparator {',
-  '  border-bottom: solid #e5e5e5 1px;',
+  '  border-bottom: solid #fff 1px;',
   '  height: 0px;',
   '  margin: 5px 0;',
   '}',
@@ -464,7 +464,7 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyTreeSelected  {',
-  '  background-color: #57e !important;',
+  '  background-color: #fff !important;',
   '}',
 
   '.blocklyTreeSelected .blocklyTreeLabel {',
