@@ -121,7 +121,7 @@ Blockly.Bitlash.init = function(workspace) {
  * @return {string} Completed code.
  */
 Blockly.Bitlash.finish = function(code) {
-  return code;
+  return code + "\r";
 };
 
 /**

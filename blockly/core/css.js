@@ -321,12 +321,12 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyScrollbarKnob {',
-  '  fill: #ccc;',
+  '  fill: #fff;',
   '}',
 
   '.blocklyScrollbarBackground:hover+.blocklyScrollbarKnob,',
   '.blocklyScrollbarKnob:hover {',
-  '  fill: #bbb;',
+  '  fill: #fff;',
   '}',
 
   /* Darken flyout scrollbars due to being on a grey background. */
@@ -464,7 +464,7 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyTreeSelected  {',
-  '  background-color: #fff !important;',
+  '  background-color: #00664C !important;',
   '}',
 
   '.blocklyTreeSelected .blocklyTreeLabel {',

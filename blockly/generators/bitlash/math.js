@@ -31,8 +31,22 @@ goog.require('Blockly.Bitlash');
 Blockly.Bitlash.math_number = function() {
   // Numeric value.
   var code = window.parseFloat(this.getFieldValue('NUM'));
-  // -4.abs() returns -4 in Dart due to strange order of operation choices.
-  // -4 is actually an operator and a number.  Reflect this in the order.
+  var order = code < 0 ?
+      Blockly.Bitlash.ORDER_UNARY_PREFIX : Blockly.Bitlash.ORDER_ATOMIC;
+  return [code, order];
+};
+
+Blockly.Bitlash.math_number_digits = function() {
+  // Numeric value.
+  var code = window.parseFloat(this.getFieldValue('NUM'));
+  var order = code < 0 ?
+      Blockly.Bitlash.ORDER_UNARY_PREFIX : Blockly.Bitlash.ORDER_ATOMIC;
+  return [code, order];
+};
+
+Blockly.Bitlash.math_number_tens = function() {
+  // Numeric value.
+  var code = window.parseFloat(this.getFieldValue('NUM'));
   var order = code < 0 ?
       Blockly.Bitlash.ORDER_UNARY_PREFIX : Blockly.Bitlash.ORDER_ATOMIC;
   return [code, order];
