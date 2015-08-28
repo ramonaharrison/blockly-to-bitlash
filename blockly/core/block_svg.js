@@ -791,12 +791,12 @@ Blockly.BlockSvg.SEP_SPACE_Y = 10;
  * Vertical padding around inline elements.
  * @const
  */
-Blockly.BlockSvg.INLINE_PADDING_Y = 5;
+Blockly.BlockSvg.INLINE_PADDING_Y = 7;
 /**
  * Minimum height of a block.
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_Y = 25;
+Blockly.BlockSvg.MIN_BLOCK_Y = 35;
 /**
  * Height of horizontal puzzle tab.
  * @const
@@ -816,12 +816,12 @@ Blockly.BlockSvg.NOTCH_WIDTH = 30;
  * Rounded corner radius.
  * @const
  */
-Blockly.BlockSvg.CORNER_RADIUS = 8;
+Blockly.BlockSvg.CORNER_RADIUS = 12;
 /**
  * Minimum height of field rows.
  * @const
  */
-Blockly.BlockSvg.FIELD_HEIGHT = 18;
+Blockly.BlockSvg.FIELD_HEIGHT = 24;
 /**
  * Distance from shape edge to intersect with a curved corner at 45 degrees.
  * Applies to highlighting on around the inside of a curve.

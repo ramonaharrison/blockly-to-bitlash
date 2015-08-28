@@ -157,7 +157,7 @@ Blockly.Css.CONTENT = [
   '  color: #000;',
   '  display: none;',
   '  font-family: sans-serif;',
-  '  font-size: 9pt;',
+  '  font-size: 10pt;',
   '  opacity: 0.9;',
   '  padding: 2px;',
   '  position: absolute;',
@@ -224,7 +224,7 @@ Blockly.Css.CONTENT = [
   '  cursor: default;',
   '  fill: #fff;',
   '  font-family: sans-serif;',
-  '  font-size: 11pt;',
+  '  font-size: 12pt;',
   '}',
 
   '.blocklyNonEditableText>text {',
@@ -295,7 +295,7 @@ Blockly.Css.CONTENT = [
   '.blocklyHtmlInput {',
   '  border: none;',
   '  font-family: sans-serif;',
-  '  font-size: 11pt;',
+  '  font-size: 12pt;',
   '  outline: none;',
   '  width: 100%',
   '}',
@@ -312,7 +312,7 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyFlyoutBackground {',
-  '  fill: #ddd;',
+  '  fill: #fff;',
   '  fill-opacity: .8;',
   '}',
 
@@ -321,7 +321,7 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyScrollbarKnob {',
-  '  fill: #fff;',
+  '  fill: #ddd;',
   '}',
 
   '.blocklyScrollbarBackground:hover+.blocklyScrollbarKnob,',
@@ -398,8 +398,8 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyTreeRow {',
-  '  line-height: 22px;',
-  '  height: 22px;',
+  '  line-height: 56px;',
+  '  height: 56px;',
   '  padding-right: 1em;',
   '  white-space: nowrap;',
   '}',
@@ -414,7 +414,7 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyTreeSeparator {',
-  '  border-bottom: solid #fff 1px;',
+  '  border-bottom: solid #000 1px;',
   '  height: 0px;',
   '  margin: 5px 0;',
   '}',
@@ -458,17 +458,42 @@ Blockly.Css.CONTENT = [
   '.blocklyTreeLabel {',
   '  cursor: default;',
   '  font-family: sans-serif;',
-  '  font-size: 16px;',
+  '  font-size: 22px;',
   '  padding: 0 3px;',
   '  vertical-align: middle;',
   '}',
 
-  '.blocklyTreeSelected  {',
-  '  background-color: #00664C !important;',
+// this doesn't work
+  '.blocklyTreeSelected:1 {',
+  '  color: #f0f0f0;',
+  '}',
+
+  '.blocklyTreeSelected:2 {',
+  '  background-color: #00d4a6;',
+  '}',
+
+  '.blocklyTreeSelected:3 {',
+  '  background-color: #11add4;',
+  '}',
+
+  '.blocklyTreeSelected:4 {',
+  '  background-color: #fc923b;',
+  '}',
+
+  '.blocklyTreeSelected:5 {',
+  '  background-color: #fcc53b;',
+  '}',
+
+  '.blocklyTreeSelected:6 {',
+  '  background-color: #ff3381;',
+  '}',
+
+  '.blocklyTreeSelected:7 {',
+  '  background-color: #4b33ff;',
   '}',
 
   '.blocklyTreeSelected .blocklyTreeLabel {',
-  '  color: #fff;',
+  '  color: #000;',
   '}',
 
   /* Copied from: goog/css/colorpicker-simplegrid.css */

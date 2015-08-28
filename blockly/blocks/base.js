@@ -34,7 +34,7 @@ goog.require('Blockly.Blocks');
 Blockly.Blocks['base_delay'] = {
   helpUrl: 'http://arduino.cc/en/Reference/delay',
   init: function() {
-    this.setColour(120);
+    this.setColour(43);
     this.appendValueInput("DELAY_TIME", 'Number')
         .appendField("delay")
         .setCheck('Number');

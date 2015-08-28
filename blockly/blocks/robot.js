@@ -32,7 +32,7 @@ goog.require('Blockly.Blocks');
 /**
  * Common HSV hue for all blocks in this category.
  */
-Blockly.Blocks.robot.HUE = 160;
+Blockly.Blocks.robot.HUE = 167;
 
 Blockly.Blocks['move_forward'] = {
   init: function() {
