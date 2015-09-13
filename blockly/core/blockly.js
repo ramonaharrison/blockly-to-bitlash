@@ -68,12 +68,12 @@ Blockly.HTML_NS = 'http://www.w3.org/1999/xhtml';
  * The richness of block colours, regardless of the hue.
  * Must be in the range of 0 (inclusive) to 1 (exclusive).
  */
-Blockly.HSV_SATURATION = 0.7;
+Blockly.HSV_SATURATION = 0.4;
 /**
  * The intensity of block colours, regardless of the hue.
  * Must be in the range of 0 (inclusive) to 1 (exclusive).
  */
-Blockly.HSV_VALUE = 0.75;
+Blockly.HSV_VALUE = 0.65;
 
 /**
  * Sprited icons and images.
@@ -90,8 +90,24 @@ Blockly.SPRITE = {
  * @return {string} RGB code, e.g. '#5ba65b'.
  */
 Blockly.makeColour = function(hue) {
+  if (hue == 1) {
+    return '#4EB596';
+  } else if (hue == 2) {
+    return '#18A2C5';
+  } else if (hue == 3) {
+    return '#EAAB21';
+  } else if (hue == 4) {
+    return '#DF3A7C';
+  } else if (hue == 5) {
+    return '#EA7D22';
+  } else if (hue == 6) {
+    return '#6764a7';
+  } else {
+
   return goog.color.hsvToHex(hue, Blockly.HSV_SATURATION,
       Blockly.HSV_VALUE * 255);
+
+    }
 };
 
 /**

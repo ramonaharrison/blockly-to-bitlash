@@ -311,9 +311,16 @@ Blockly.Toolbox.TreeControl.prototype.handleTouchEvent_ = function(e) {
  * @override
  */
 Blockly.Toolbox.TreeControl.prototype.createNode = function(opt_html) {
-  return new Blockly.Toolbox.TreeNode(this.toolbox_, opt_html ?
-      goog.html.SafeHtml.htmlEscape(opt_html) : goog.html.SafeHtml.EMPTY,
-      this.getConfig(), this.getDomHelper());
+
+var node = new Blockly.Toolbox.TreeNode(this.toolbox_, opt_html ?
+    goog.html.SafeHtml.htmlEscape(opt_html) : goog.html.SafeHtml.EMPTY,
+    this.getConfig(), this.getDomHelper());
+
+
+      var icon = '<img src="../blockly/media/drawer0' + opt_html + '.png">';
+      console.log(icon);
+      node.setHtml(icon);
+      return node;
 };
 
 /**

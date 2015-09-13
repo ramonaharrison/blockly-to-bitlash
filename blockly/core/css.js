@@ -192,7 +192,7 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklySelected>.blocklyPath {',
-  '  stroke: #fc3;',
+  '  stroke: #B4E2D5;',
   '  stroke-width: 3px;',
   '}',
 
@@ -239,7 +239,7 @@ Blockly.Css.CONTENT = [
 
   '.blocklyNonEditableText>text,',
   '.blocklyEditableText>text {',
-  '  fill: #000;',
+  '  fill: #fff;',
   '}',
 
   '.blocklyEditableText:hover>rect {',
@@ -321,7 +321,8 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyScrollbarKnob {',
-  '  fill: #ddd;',
+  '  fill: #fff;',
+  '  opacity: 0;',
   '}',
 
   '.blocklyScrollbarBackground:hover+.blocklyScrollbarKnob,',
@@ -386,6 +387,7 @@ Blockly.Css.CONTENT = [
   '  background-color: #fff;',
   '  overflow-x: visible;',
   '  overflow-y: auto;',
+  '  width: 94px;',
   '  position: absolute;',
   '}',
 
@@ -400,13 +402,13 @@ Blockly.Css.CONTENT = [
   '.blocklyTreeRow {',
   '  line-height: 56px;',
   '  height: 56px;',
-  '  padding-right: 1em;',
+  '  padding-top: 1em;',
   '  white-space: nowrap;',
   '}',
 
   '.blocklyToolboxDiv[dir="RTL"] .blocklyTreeRow {',
   '  padding-right: 0;',
-  '  padding-left: 1em !important;',
+  '  padding-left: 0 !important;',
   '}',
 
   '.blocklyTreeRow:hover {',
